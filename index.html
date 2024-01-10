@@ -5,16 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website Title</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Add any additional meta tags, stylesheets, or scripts here -->
+
 </head>
+
 <body>
-    <!-- Your website content goes here -->
+
     <header>
-        <h1>Welcome to Your Website</h1>
-        <!-- Add any navigation links or other header content here -->
+        <!-- Left Section: Company Name and Logo -->
+        <div class="header-left">
+            <img src="company-logo.png" alt="Company Logo">
+            <h1>Company Name</h1>
+        </div>
+
+        <!-- Middle Section: Quick Navigation Links -->
+        <nav class="header-middle">
+            <a href="#services">Services</a>
+            <a href="#faq">FAQ</a>
+            <a href="#reviews">Reviews</a>
+        </nav>
+
+        <!-- Right Section: Company Phone Number (.PNG file ) -->
+        <div class="header-right">
+            <img src="phone-icon.png" alt="Phone Icon">
+            <p>Call us at: <span class="phone-number">403-412-7890</span></p>
+        </div>
     </header>
 
-    <main>
+    <main class="image-gallery">
+        <!-- image gallery section -->
+        <div class="image-slider">
+            <div class="slide" style="background-image: url('image1.jpg');"></div>
+            <div class="slide" style="background-image: url('image2.jpg');"></div>
+            <div class="slide" style="background-image: url('image3.jpg');"></div>
+        </div>
+
         <section>
             <h2>About Us</h2>
             <p>This is a brief description of your website.</p>
@@ -30,5 +54,10 @@
         <p>&copy; 2024 Your Website. All rights reserved.</p>
         <!-- Add any additional footer content or links here -->
     </footer>
+    
+    <!-- script to handle automatic rotations of the images -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>

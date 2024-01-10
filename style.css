@@ -7,14 +7,69 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1em;
+}
+
+.header-left img {
+    max-width: 50px; /* Adjust the maximum width of your logo */
+    margin-right: 10px;
+}
+
+.header-left h1 {
+    margin: 0;
+}
+
+.header-middle a {
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-right img {
+    max-width: 30px; /* Adjust the maximum width of your phone icon */
+    margin-right: 10px;
+}
+
+.phone-number {
+    font-weight: bold;
 }
 
 main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.image-gallery {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-slider {
+    display: flex;
+    width: 300%; /* 100% * number of slides */
+}
+
+.slide {
+    flex: 1;
+    min-width: 100%;
+    height: 400px; /* Height should remain the same, scale all images to fit this container */
+}
+
+/* Keyframes for the automatic slide animation */
+@keyframes slide {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25%, 50% {
+        transform: translateX(-100%);
+    }
+    75% {
+        transform: translateX(-200%);
+    }
 }
 
 section {
