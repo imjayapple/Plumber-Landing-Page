@@ -10,8 +10,8 @@ function updateSlider() {
     slider.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
-// Cycle slide every 5 seconds
-setInterval(nextSlide, 5000);
+// Cycle slide every 3 seconds
+setInterval(nextSlide, 3000);
 
 // Initial update
 updateSlider();
