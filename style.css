@@ -51,24 +51,34 @@ main {
 .image-slider {
     display: flex;
     width: 300%; /* 100% * number of slides */
+    animation: slide 15s linear infinite; /* Duration can be modified */
+    overflow: hidden; /* Ensure images do no overflow the container */
 }
 
 .slide {
     flex: 1;
-    min-width: 100%;
-    height: 400px; /* Height should remain the same, scale all images to fit this container */
+    min-width: 100vw; /* vw = viewport width, 100% is the entire width */
+    height: 100vh; /* vh = viewport height */
+    background-size: cover;
+    transition: opacity 0.5s ease-in-out;
 }
 
 /* Keyframes for the automatic slide animation */
 @keyframes slide {
-    0%, 100% {
+    0% {
         transform: translateX(0);
     }
-    25%, 50% {
+    16.666%, 25% {
         transform: translateX(-100%);
     }
-    75% {
+    41.666%, 50% {
         transform: translateX(-200%);
+    }
+    66.666%, 75% {
+        transform: translateX(-300%);
+    }
+    91.666%, 100% {
+        transform: translateX(-400%);
     }
 }
 
