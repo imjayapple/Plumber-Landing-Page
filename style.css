@@ -53,6 +53,7 @@ main {
     width: 300%; /* 100% * number of slides */
     animation: slide 15s linear infinite; /* Duration can be modified */
     overflow: hidden; /* Ensure images do no overflow the container */
+    object-fit: cover;
 }
 
 .slide {
