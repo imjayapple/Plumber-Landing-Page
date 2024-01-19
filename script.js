@@ -7,7 +7,8 @@ function nextSlide() {
 }
 
 function updateSlider() {
-    const slider = document.querySelector('.image-slider');
+    const slider = document.querySelector('.slideshow-container');
+    slider.style.transition = 'transform 1s ease-in-out'; // Add this line for smooth transition
     slider.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
