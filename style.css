@@ -50,14 +50,6 @@ main {
     overflow: hidden;
 }
 
-./* Your existing styles go here */
-/*
-.image-gallery {
-  position: relative;
-  overflow: hidden;
-}
-/* Remove these selectors, not relevant anymore */
-
 .image-slider {
   display: flex;
   width: 300%; /* 100% * number of slides */
@@ -70,19 +62,6 @@ main {
   height: 400px; /* Adjust the height as needed */
   background-size: cover;
   transition: opacity 0.5s ease-in-out;
-}
-
-/* Keyframes for the slide animation */
-@keyframes slide {
-  0%, 100% {
-      transform: translateX(0);
-  }
-  25%, 50% {
-      transform: translateX(-100%);
-  }
-  75% {
-      transform: translateX(-200%);
-  }
 }
 
 section {
