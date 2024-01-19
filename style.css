@@ -2,6 +2,9 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
@@ -47,35 +50,12 @@ main {
 
 .slideshow-container {
     position: relative;
-    max-width: 1000px;
+    max-width: 100%;
     margin: auto;
 }
 
 .bkrndImgSlides {
-    display: none;
-}
 
-img {
-    width: 100%;
-    height: auto;
-}
-
-.fade {
-    animation: fade 2s ease-in-out infinite;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-section {
-    margin-bottom: 20px;
 }
 
 footer {
