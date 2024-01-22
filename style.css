@@ -64,6 +64,7 @@ main {
     border: 1px solid black;
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
 }
 
 .image_1 {
