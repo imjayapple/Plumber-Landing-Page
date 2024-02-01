@@ -48,7 +48,20 @@ header {
 }
 
 .slider {
-    
+    overflow: hidden;
+}
+
+figure.slider {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+img.slider {
+    float: left;
+    width: 20%;
 }
 
 footer {
